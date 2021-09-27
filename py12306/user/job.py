@@ -71,7 +71,7 @@ class UserJob:
         :return:
         """
         while True and self.is_alive:
-            app_available_check()
+            # app_available_check()
             if Config().is_slave():
                 self.load_user_from_remote()
             else:
